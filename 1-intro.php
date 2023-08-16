@@ -37,18 +37,18 @@
 // Object-Oriented Style:
 // Connection: To connect to a MySQL database using mysqli in object-oriented style, you can use the following code:
 
-// $servername = "localhost";
-// $username = "username";
-// $password = "password";
-// $dbname = "database";
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "database";
 
-// // Create connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// // Check connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 //--------------------------------------------------------------------------------------------------------------------------
 
 //Query Execution: To execute a query and retrieve data, you can use the following code:
